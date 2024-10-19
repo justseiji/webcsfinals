@@ -180,9 +180,9 @@ nav ul li a {
 }
 
 .product-grid {
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to the next line */
-    justify-content: center; /* Center items horizontally */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 20px; /* Space between items */
     max-width: 1200px; /* Set a max width for the container */
     margin: 0 auto; /* Center the container */
 }
@@ -191,9 +191,6 @@ nav ul li a {
     background-color: #e9e9e9;
     padding: 20px;
     border-radius: 10px;
-    width: calc(50% - 20px); /* Set width to take 50% of the row, minus margin */
-    margin: 10px; /* Space between items */
-    box-sizing: border-box; /* Ensure padding/margin is included in width */
     text-align: center;
 }
 
